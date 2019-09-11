@@ -21,7 +21,7 @@ class CashRegister
       @total *= (100.0 - @discount) / 100.0
       msg = "After the discount, the total comes to $#{@total}."
     end
-
+    msg
   end
 
 end
