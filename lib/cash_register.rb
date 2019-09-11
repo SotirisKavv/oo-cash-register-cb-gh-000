@@ -24,4 +24,8 @@ class CashRegister
     msg
   end
 
+  def items
+    list.keys
+  end
+
 end
