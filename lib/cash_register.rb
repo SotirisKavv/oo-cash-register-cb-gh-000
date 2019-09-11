@@ -5,11 +5,13 @@ class CashRegister
   def initialize(employee_discount = 0)
     @total = 0
     @discount = employee_discount
-    @list = {}
+    @list = []
   end
 
   def add_item(title, price, quantity = 1)
-    @list[title] = price
+    quantity.times do 
+      @list << [title, price]
+    end
     @total += price * quantity
   end
 
@@ -25,7 +27,11 @@ class CashRegister
   end
 
   def items
-    @list.keys
+    items = []
+    @list.each do |item|
+      items << item[0]
+    end
+    items
   end
 
   def void_last_transaction
