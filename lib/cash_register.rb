@@ -25,7 +25,11 @@ class CashRegister
   end
 
   def items
-    list.keys
+    @list.keys
+  end
+
+  def void_last_transaction
+    
   end
 
 end
