@@ -32,6 +32,7 @@ class CashRegister
       items << item[0]
     end
     items
+    binding.pry
   end
 
   def void_last_transaction
