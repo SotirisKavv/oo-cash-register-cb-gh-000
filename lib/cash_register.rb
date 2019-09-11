@@ -7,5 +7,5 @@ class CashRegister
     @employee_discount = employee_discount
   end
 
-  
+
 end
